@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "post_ip"
+version = "0.1.0"
+description = "post my ip to google drive"
+authors = ["Bruno Fauth <149593@upf.br>"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: System :: Shells",
+]
+# keywords = []
+# repository = ""
+
+# [tool.poetry.urls]
+# "Bug Tracker" = ""
+# "Homepage" = ""
+
+[tool.poetry.dependencies]
+python = "^3.12"
+google-api-python-client = "^2.142.0"
+google-auth-httplib2 = "^0.2.0"
+google-auth-oauthlib = "^1.2.1"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+google-api-python-client-stubs = "^1.27.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+# https://github.com/python-lsp/pylsp-mypy
+[tool.pylsp-mypy]
+enabled = true
+live_mode = true
+dmypy = false
+strict = false
+
+# https://docs.astral.sh/ruff/settings
+# https://docs.astral.sh/ruff/configuration
+[tool.ruff]
+# builtins = ["print_err"]
+line-length = 110
+
+[tool.ruff.lint]
+ignore = ["E731", "E701", "E702", "E741"]
+
+# https://github.com/google/yapf
+[tool.yapf]
+based_on_style = 'google'
+coalesce_brackets = true
+column_limit = 110
+# continuation_align_style = "fixed"
+continuation_align_style = "valign-right"
+# continuation_align_style = "space"
+dedent_closing_brackets = false
+indent_closing_brackets = false
+join_multiple_lines = false
+spaces_before_comment = 3
+split_arguments_when_comma_terminated = true
+split_penalty_after_unary_operator = 9999999

@@ -1,0 +1,12 @@
+# See, edit, create, and delete only the specific Google Drive files you use with this app
+https://www.googleapis.com/auth/drive.file
+
+# # See, create, and delete its own configuration data in your Google Drive
+# https://www.googleapis.com/auth/drive.appdata
+
+# # View and manage metadata of files in your Google Drive
+# https://www.googleapis.com/auth/drive.metadata
+
+# # See and download all your Google Drive files
+# https://www.googleapis.com/auth/drive.readonly
+
