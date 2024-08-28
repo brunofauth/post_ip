@@ -30,6 +30,11 @@ requests = "^2.32.3"
 [tool.poetry.group.dev.dependencies]
 google-api-python-client-stubs = "^1.27.0"
 
+
+[tool.poetry.scripts]
+post-ip = 'post_ip.__main__:main'
+
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
